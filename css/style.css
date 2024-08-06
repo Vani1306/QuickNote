@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li, a ,button{
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 16px;
+    color:black;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color:gainsboro;
+    
+}
+
+#nav-list{
+    list-style: none;
+}
+#nav-list li{
+    display: inline-block;
+    padding: 0px 20px;
+    color:black;
+}
+#nav-list li a {
+    transition: all 0.3s ease 0s;
+}
+#nav-list li a:hover {
+    color:#0088a9;
+}
+
+#text{
+    background-color: hsl(252,30%,95%);
+    border-radius: 2rem;
+    padding:0.6rem 0.8rem;
+}
+#text input[type="text"]{
+    background: transparent;
+    width:30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color:hsl(252,30%,17%);
+}
+
+#searchButton{
+    padding:9px 12px;
+    background-color:#63165a;
+    border:none;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+}
+#searchButton:hover{
+    background-color: #b565ab;
+}
+body{
+    background-color: whitesmoke;
+}
+#hamburger, #hamburger2{
+    margin-top: 5.5px;
+    visibility: hidden;
+}
+
+.bars{
+    width:30px;
+    height:5px;
+    background-color: #ffffff;
+    margin:5px 3px 0 -8px;
+    border-radius: 3px;
+}
+.heading{
+    text-align: center;
+    font-size: 45px;
+}
+.container{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+#create-note{
+    margin: 20px 0;
+    width: 100%;
+    height: fit-content;
+    border-radius: 20px;
+  
+}
+
+
+hr{
+    margin: 20px 0;
+}
+
+#zero-notes{
+    color: grey;
+}
+
+.dropdown{
+    float: right;
+}
+
+#display-order{
+    padding: 0.8rem;
+    font-size: small;
+    width:auto;
+    height:30px;
+    float: right;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(160, 136, 136);
+    color: white;
+    border-radius: 3px;
+}
+
+.arrow{
+    margin-left:5px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding:3px;
+}
+
+.down{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.dropdown-items{
+    padding: 0.8rem;
+    font-size: small;
+    display:grid;
+    float: right;
+    position: absolute;
+    margin-top:30px;
+    width:auto;
+    background-color: #ffffff;
+    border: 2px solid rgb(79, 76, 76);
+    border-top: 0ch;
+    border-radius: 0px 0px 5px 5px; 
+    font-weight: 300;
+}
+
+.dropdown-item{
+    background:none;
+    height: 24px;
+    cursor: pointer;
+    border-style: hidden;
+    font-weight: 300;
+}
+.contain{
+    width:100%;
+    min-height: 100vh;
+    padding:5%;
+    background-color: grey;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.search-bar{
+    width:100%;
+    max-width:700px;
+    background: rgba(255,255,255,0.9);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding:10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+.search-bar input{
+    background : transparent;
+    flex:1;
+    border:0;
+    outline: none;
+    padding: 7px 7px;
+    font-size: 17px;
+    color:#000;
+}
+::placeholder{
+    color:#cac7ff;
+}
+.search-bar button i{
+    width: 25px;
+}
+.search-bar button{
+    border:0;
+    border-radius:50%;
+    width:30px;
+    height:30px;
+    background: #63165a;
+    cursor:pointer;
+}
+#add-note:hover{
+    background-color: #b565ab;
+    color:#fff;
+    font-weight:900;
+}
+.trashIcon{
+    height: 25px;
+    padding:8px;
+    margin:20px;
+    font-size: 15px;
+    width:16%;
+    border:1px solid red;
+    color:#fff;
+    background-color:  rgb(235, 103, 103);
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor:pointer;
+}
+.trashIcon:hover{
+    background-color: red;
+}
+
+@media only screen and (max-width:900px){
+    .container{
+        width:90%;
+        margin-left: 4%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    ul{
+        width:90%;
+    }
+
+    nav{
+        margin:auto;
+        display: flex;
+        overflow:hidden;
+    }
+
+    nav li{
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #text{
+        width:60vw;
+        float:left;
+        margin-left: 13vw;
+    }
+
+    #searchButton{
+        float: left;
+        width:45px;
+        visibility: hidden;
+        margin-left: 2vw;
+        position: absolute;
+        margin-top: 0px;
+    }
+    
+    #hamburger, #hamburger2{
+        visibility: visible;
+    }
+}
