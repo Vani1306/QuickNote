@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickNotes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tasks.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+
+        <a href="/index.html"> <div class="list-item appName" style="margin-bottom:3px;color: #63165a;font-size:35px;">QuickNotes<img src="images/pencil.png" width=40px></div></a>
+    <nav>
+        <ul id="nav-list">
+            <input type="text" name="text" id="text" placeholder="Search notes">
+            <button type="submit" id="searchButton"><i class="fa-solid fa-search"></i></button>
+        </ul></header>
+        <span id="hamburger" style="color:white;">
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+        </span>
+    </nav>
+    <div class="container">
+        <h1 class="heading">Welcome to QuickNotes</h1>
+        <div id="create-note">
+                <div class="search-bar" id="add-a-note">
+                    <input type="text" id="write-note" placeholder="Add note..." name="q">
+                    <button type="submit" id="add-note"><i class="fa-solid fa-plus"></i></button>
+                    
+                </div>
+                <div class="trashIcon" id="clear-notes">Delete all &nbsp;&nbsp;<i class="fa-solid fa-trash" style="color:black"></i></div>
+            </div>
+        <div>
+            <hr>
+            <h1>Your Notes</h1>
+            <div class="dropdown">
+                <button id="display-order" type="button" id="dropdownMenu2">
+                    Oldest First <i class="arrow down"></i>
+                </button>
+                <div class="dropdown-items">
+                    <button id="oldestFirst" class="dropdown-item" type="button">Oldest First</button>
+                    <button id="newestFirst" class="dropdown-item" type="button">Newest First</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div id="editbox">
+            <h1>Change the Text:</h1>
+            <input type="text" id="toChangeText">
+            <div id="buttons">
+                <button id="changeText">Change</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+        <div id="zero-notes">
+            Nothing to show! Use add a Note section to add notes.
+        </div>
+    </div>
+    <script src="js/tmp.js"></script>
+</body>
+
+</html>
